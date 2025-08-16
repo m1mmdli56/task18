@@ -7,8 +7,8 @@
 .container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(9, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(7, 150px);
+    grid-template-rows: repeat(3, 150px);
     gap: 20px;
 }
 
