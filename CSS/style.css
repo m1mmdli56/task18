@@ -6,6 +6,7 @@
 
 .container {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(9, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 20px;
@@ -39,4 +40,73 @@
 
 .box:nth-child(8) {
     grid-column: 7 / span 1;
+}
+
+.title {
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1560bd;
+    margin-bottom: 20px;
+}
+
+.direction {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.boxes {
+    background-color: #F2F7FF;
+    box-shadow: 0px 4px 10px rgba(124, 124, 124, 0.25);
+    border-radius: 10px;
+}
+
+.boxes:hover {
+    color: white;
+    background-color: #1560bd;
+    transition: 0.4s;
+    position: relative;
+}
+
+.boxes-title {
+    padding: 15px 0 0 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1560bd;
+    line-height: 26px;
+    position: relative;
+    display: inline-block;
+}
+
+.boxes:hover .boxes-title {
+    color: white;
+}
+
+.boxes-text {
+    width: 70%;
+    padding: 20px 0 20px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #424242;
+    line-height: 24px;
+}
+
+.boxes:hover .boxes-text {
+    color: white;
+}
+
+.boxes-title::after {
+    content: "";
+    bottom: 0;
+    left: 10px;
+    background: linear-gradient(90deg, rgba(255, 122, 0, 1), rgba(23, 61, 122, 1));
+    width: 100px;
+    height: 3px;
+    position: absolute;
 }
